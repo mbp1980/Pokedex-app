@@ -20,15 +20,16 @@ let pokemonRepository = (function () {
       height: .5,
       type: ['water']
     }
-  ];
-  pokemonList.forEach(function(pokemon) {
-    document.write(pokemon.name + ' is ' + pokemon.height + ' tall ' + '<br />');
-  });
+];
 
-  function myLoopFunction(pokemon) {
-    console.log(pokemon.name +  ' is ' + pokemon.height + 'tall');
-  }
-  pokemonList.forEach(myLoopFunction);
+//pokemonList.forEach(function(pokemon) {
+  //document.write(pokemon.name + ' is ' + pokemon.height + ' tall ' + '<br />');
+//});
+
+//function myLoopFunction(pokemon) {
+  //console.log(pokemon.name +  ' is ' + pokemon.height + 'tall');
+//}
+//pokemonList.forEach(myLoopFunction);
 
   function getAll() {
     return pokemonList;
@@ -42,4 +43,10 @@ let pokemonRepository = (function () {
     getAll: getAll,
     add: add
   };
-  })();
+
+})();
+console.log( pokemonRepository.getAll() );
+
+pokemonRepository.getAll().forEach(function(pokemon) {
+    document.write(pokemon.name + ' is ' + pokemon.height + ' tall ' + '<br />');
+  })
