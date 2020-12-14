@@ -48,5 +48,5 @@ let pokemonRepository = (function () {
 console.log( pokemonRepository.getAll() );
 
 pokemonRepository.getAll().forEach(function(pokemon) {
-    document.write(pokemon.name + ' is ' + pokemon.height + ' tall ' + '<br />');
-  })
+  document.write(pokemon.name + ' is ' + pokemon.height + ' tall ' + '<br />');
+})
