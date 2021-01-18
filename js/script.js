@@ -109,17 +109,10 @@ let pokemonRepository = (function () {
     loadDetails: loadDetails
   };
 
-})();
-//console.log( pokemonRepository.getAll() );
+  })();
 
 pokemonRepository.loadList().then(function() {
   pokemonRepository.getAll().forEach(function(pokemon) {
     pokemonRepository.addListItem(pokemon);
   });
-});
-
-//let container = document.querySelector('.container');
-
-//let button = document.createElement('button');
-//button.innerText = 'click me';
-//container.appendChild(button)
+  });
