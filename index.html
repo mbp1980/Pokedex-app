@@ -4,20 +4,17 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <title>Pokedex App</title>
   </head>
   <body>
@@ -26,14 +23,12 @@
       <div class="container-fluid flex-column flex-md-row">
         <span class="pokedex-header"><strong>Pokedex</strong></span>
         <form class="col-8">
-          <input
-            id="pokemon-search"
+          <input id="pokemon-search"
             oninput="searchPokemon()"
             placeholder="Search"
             class="form-control mb-2 mb-md-0"
             type="search"
-            aria-label="Search"
-          />
+            aria-label="Search"/>
         </form>
         <span class="status"></span>
       </div>
@@ -43,34 +38,26 @@
     <div class="list-group list-group-custom pokemon-list"></div>
 
     <!--Modal Container-->
-    <div
-      class="modal fade"
-      tabindex="-1"
+    <div class="modal fade"
+        tabindex="-1"
       id="pokemon-info"
-      aria-labelledby="pokemon-name"
-      aria-hidden="true"
-    >
+        aria-labelledby="pokemon-name"
+        aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content text-center">
           <div class="modal-header">
             <h5 class="modal-title text-capitalize fs-2" id="pokemon-name"></h5>
-            <p id="pokemon-id"></p>
-            <button
-              type="button"
-              class="btn-close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
+            <button type="button"
+                    class="btn-close"
+                    data-dismiss="modal"
+                    aria-label="Close">
             </button>
           </div>
           <div class="modal-body"></div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
+            <button type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal">Close
             </button>
           </div>
         </div>
