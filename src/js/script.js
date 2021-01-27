@@ -60,7 +60,6 @@ let pokemonRepository = (function() {
     modalBody.append(pokemonImage);
     modalBody.append(pokemonHeight);
     modalBody.append(pokemonWeight);
-    modalBody.append(pokemonType);
 
     pokemon.types.forEach(function(pokemon) {
 
