@@ -38,7 +38,7 @@ button {
 }
 
 button:hover {
-  font-size: 20px;
+  font-size: 16px;
   background-color: #4caf50;
   cursor: pointer;
 }
@@ -94,6 +94,10 @@ button:hover {
 #pokemon-name {
   font-weight: 700;
   font-size: 28px;
+}
+
+.modal-header{
+  color: #208383
 }
 /*model text*/
 p {
