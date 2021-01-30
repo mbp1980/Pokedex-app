@@ -116,16 +116,21 @@ p {
   border: none;
   border-radius: 40px;
   color: black;
+  border: 2px transparent solid;
+  line-height: 32px;
+  transition: font-size 0.3s
 }
 .list-group-custom .list-group-item:hover {
   color: white;
   background: #208383;
   border: 2px solid #eee;
+  line-height: 32px;
+  transition: font-size 0.3s;
 }
 .list-group-custom .list-group-item:focus {
   color: black;
   background: #A5F8F8;
-  }
+}
 
 #pokemon-search {
   border-radius: 50px;
